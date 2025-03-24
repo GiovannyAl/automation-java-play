@@ -60,8 +60,8 @@ public class LoginPage extends PageObject {
         return fieldErrorMessages;
     }
 
-    public String getUserDropdownName() {
+    public String getUserClass() {
         userDropdownName.waitUntilVisible();
-        return userDropdownName.getText();
+        return userDropdownName.getAttribute("class");
     }
 }

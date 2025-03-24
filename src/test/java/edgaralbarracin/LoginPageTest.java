@@ -61,11 +61,11 @@ public class LoginPageTest {
 
     @Test
     public void testLoginWithValidCredentials() {
-        String expectedUsername = "IkwdDlikRs userLastNameTest";
+        String expectedUserClass = "oxd-userdropdown-name";
         loginPage.login("Admin", "admin123");
 
-        String actualUsername = loginPage.getUserDropdownName();
-        assertEquals(expectedUsername, actualUsername);
+        String actualUserClass = loginPage.getUserClass();
+        assertEquals(expectedUserClass, actualUserClass);
     }
 }
 
